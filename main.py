@@ -12,17 +12,17 @@ while True:
             todos.append(todo)
 
         case "edit":
-            for item in todos:
-                print(item)
+            for i, item in enumerate(todos):
+                print(i+1, "- " + item)
             index = int(input("Enter an option number You want to edit: "))
             index = index - 1
             new_todo = input("Enter new to do: ")
             todos[index] = new_todo
-            for item in todos:
-                print(item)
+            for i, item in enumerate(todos):
+                print(i+1, "- " + item)
         case "show":
-            for item in todos:
-                print(item)
+            for i, item in enumerate(todos):
+                print(i+1, "- " + item)
         case "exit":
             print("Thank you! Bye!")
             break
